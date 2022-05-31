@@ -13,7 +13,6 @@ $create_table_req = "CREATE TABLE IF NOT EXISTS $table_name (
     PRIMARY KEY (id)
 )";
 
-
 try {
     $dbh =  new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
